@@ -4,8 +4,7 @@ require 'rubygems'
 require 'rake'
 require 'rake/testtask'
 require 'bundler'
-
-
+require 'bundler/gem_tasks'
 
 Rake::TestTask.new do |t|
   t.libs << '.' << 'lib' << 'test'
