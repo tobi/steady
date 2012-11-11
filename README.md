@@ -1,11 +1,11 @@
-# Periodic
+# Steady
 
 This gem is aimed at helping speed up ruby webapps by putting reoccuring but non time critical tasks into a background thread.
 It aids with the periodic scheduling as well as the threading issues that arise from moving data between threads. 
 
 # Example
 
-    Scheduler = Periodic::Scheduler.new
+    Scheduler = Steady::Scheduler.new
     
     Scheduler.every 3.seconds do |changes|
       changes[:plans] = JSON.parse(open("http://mysite.com/plans.json")) 

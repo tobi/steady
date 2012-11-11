@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'periodic/version'
+require 'steady/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "periodic"
-  gem.version       = Periodic::VERSION
+  gem.name          = "steady"
+  gem.version       = Steady::VERSION
   gem.authors       = ["Tobias Lutke"]
   gem.email         = ["tobi@shopify.com"]
   gem.description   = %q{Periodically run tasks that fetch data}
-  gem.summary       = %q{Simple worker thread for periodic tasks}
+  gem.summary       = %q{Simple worker thread for steady tasks}
   gem.homepage      = ""
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

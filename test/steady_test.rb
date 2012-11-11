@@ -1,10 +1,10 @@
 require "test/unit"
-require "periodic"
+require "steady"
 
-class PeriodicTask < Test::Unit::TestCase
+class SteadyTask < Test::Unit::TestCase
 
   def setup
-    @sched = Periodic::Scheduler.new
+    @sched = Steady::Scheduler.new
   end  
 
   def test_tasks_run

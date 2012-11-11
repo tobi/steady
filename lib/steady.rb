@@ -2,7 +2,7 @@ require 'speedytime'
 require 'thread'
 require 'set'
 
-module Periodic
+module Steady
 
   class SyncronizedHash
     def initialize
